@@ -1,3 +1,5 @@
+# .\zadanie-domowe.ps1 -FilePath <path_to_file>
+
 # Getting arguments
 param(
     [Parameter(Mandatory=$true)]
