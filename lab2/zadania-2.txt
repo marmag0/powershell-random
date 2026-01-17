@@ -1,0 +1,28 @@
+﻿Zadanie 1.
+Utwórz skrypt, który:
+(1) znajdzie w katalogu $sourceDir pliki txt oraz log. 
+(2) znalezione pliki txt skopiuje do katalogu $destinationDirTXT a pliki log do $destinationDirLOG
+(2a) Sprwawdź czy katalogi docelowe istnieją, jeśli nie to je utwórz
+(3) nazwy kopiowanych plików powinny miec nazwę z prefixem "kopia-"
+
+Zadanie 2.
+Utwórz skrypt, który:
+(1) zliczy ilość plików .txt oraz .log w katalogu $sourceDir wraz z podkatalogami
+(2) wygeneruje $csvFile zawierający liste znalezionych plików txt wraz z podstawowymi właściwościami
+    nazwy, czasu utworznia, wielkości i atrybutów
+(3) dopisze do $logFile linię zawierającą aktulana date oraz informacje o ilości znalezionych plików .txt i .log
+    jeśli plik $logFile nie istniej to zostanie utworzony
+
+Zadanie 3.
+Utwórz skrypt, który jako parametr nazwe katalogu:
+(1) Utworzy w katalogu testowym kilka plików .txt.
+(2) Dla utworzonych plików wyświetli:
+  nazwę pliku,
+  pełną ścieżkę,
+  rozmiar w KB,
+  datę utworzenia,
+  datę ostatniej modyfikacji.
+(3) Zapisze wynik do pliku CSV.
+(4) Zmieni date utworzenia wszystkich plików na 1 stycznia 2000 godz. 12
+(5) Dla 2 z utworzonych plików ustawi atrybut Hidden
+(6) Zapisze raport ze zmienionymi plikami do pliku txt, w którym znajda się też atrybuty

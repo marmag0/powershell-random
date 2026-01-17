@@ -1,0 +1,36 @@
+Zadanie 1.
+Napisz skrypt PowerShell, który zbiera informacje o logowaniach do systemu Windows
+z dziennika zdarzeń zabezpieczeń (Security Event Log) za pomocą Get-WinEvent.
+jako parametr przyjmuje: czas rozpoczęcia zbierania zdarzeń podawny w godzinach (np. -StartHoursAgo 48 dla ostatnich 48 godzin).
+Skrypt powinien sparsować dane XML zdarzeń, aby wyodrębnić następujące informacje:
+- Czas zdarzenia (TimeCreated)   
+- Identyfikator zdarzenia (EventID)
+- Typ logowania (LogonType)
+- Wynik logowania (sukces/niepowodzenie)
+- Nazwa użytkownika (TargetUserName)
+- Adres IP źródła (IPAddress)
+- Nazwa komputera (MachineName)
+- Pełna wiadomość zdarzenia (Message)
+Następnie skrypt powinien wyświetlić te informacje w czytelnej tabeli w konsoli
+oraz zapisać je do pliku CSV o nazwie "windows_logons_<timestamp>.csv", gdzie <timestamp> to aktualna data i godzina w formacie "yyyy-MM-dd-HH-mm". 
+
+Zadanie 2.
+Napisz skrypt PowerShell, który zbiera informacje o ważnych zdarzeniach systemowych
+z dziennika zdarzeń zabezpieczeń (Security Event Log) oraz systemowego (System Event Log)
+z użyciem Get-WinEvent.
+jako parametr przyjmuje: czas rozpoczęcia zbierania zdarzeń podawny w godzinach (np. -StartHoursAgo 24 dla ostatnich 24 godzin).
+Skrypt powinien zbierać zdarzenia dotyczące:
+- Tworzenie konta użytkownika (Event ID 4720)
+- Aktywacja konta użytkownika (Event ID 4722)
+- Zmiana hasła użytkownika (Event ID 4723)
+- Instalacja usługi (Event ID 7045)
+- Uruchomienie systemu (Event ID 6005)
+- Wyłączenie systemu (Event ID 6006)
+Następnie skrypt powinien sparsować dane XML zdarzeń, aby wyodrębnić następujące informacje:
+- Czas zdarzenia (TimeCreated)
+- Identyfikator zdarzenia (EventID)
+- Kategoria zdarzenia (ProviderName)
+- Nazwa komputera (MachineName)
+- Pełna wiadomość zdarzenia (Message) 
+Następnie skrypt powinien wyświetlić te informacje w czytelnej tabeli w konsoli
+oraz powinien zapisać te informacje do pliku CSV o nazwie "windows_events_<timestamp>.csv", gdzie <timestamp> to aktualna data i godzina w formacie "yyyy-MM-dd-HH-mm".

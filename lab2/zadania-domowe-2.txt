@@ -1,0 +1,7 @@
+Utwórz skrypt, który przyjmuje argument w postaci ścieżki do pliku i:
+(1) odczytuje ADS (Alternate Data Streams) dla tego pliku i wyświetla je w konsoli.
+(2) doda kombinacje 3 nastepujących ADS wskazanego pliku
+  - Recenzent : z dwoma recenzentami: "Jan Kowalski", "Anna Nowak"
+  - Śledztwo : "Akta 32/2025"
+  - Departament : "DEV"
+(3) wyświetli w konsoli dodane ADS

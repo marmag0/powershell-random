@@ -1,0 +1,39 @@
+Zadanie 1.
+Napisz skrypt który:
+(1) pobiera z dziennika Security zdarzenia o identyfikatorze 4625 (nieudane logowanie) za okres 14 dni
+(2) Wyświetli raport zawierający: 
+**TimeCreated**      | Data i godzina wystąpienia zdarzenia                                
+**TargetUserName**   | Nazwa konta, które próbowało się zalogować                          
+**TargetDomainName** | Domena lub komputer, do którego próbowano się zalogować             
+**IpAddress**        | Adres IP źródła logowania (jeśli dostępny)                          
+**WorkstationName**  | Nazwa komputera z którego próbowano się zalogować                   
+**LogonType**        | Typ logowania (np. 2 – interaktywne, 3 – sieciowe, 10 – zdalne RDP) 
+**FailureReason**    | Przyczyna niepowodzenia (np. błędne hasło, brak konta)              
+**SubStatus**        | Kod błędu NTSTATUS (umożliwia szczegółową analizę błędu)            
+
+(3) Zapisze raport do pliku CSV o zadanej ścieżce
+(4) Ustali z jakiego adresu IP było najwięcej nieudanych prób logowania i o kórej godzinie była ostatnia próba z tego adresu
+(5) Wypisze na ekranie liczbę nieudanych logowań pogrupowanych według adresów IP
+
+Zadanie 2.
+Napisz skrypt który:
+(1) pobiera dane z dziennika Application o zdarzeniach o poziomie "Error" i "Warning" za ostatnie 7 dni
+(2) Wyświetli raport zawierający:
+**TimeCreated**             | Data i godzina wystąpienia zdarzenia     
+**SourceName**              | Nazwa źródła zdarzenia (aplikacja)       
+**ProviderName**            | Nazwa dostawcy zdarzenia                 
+**EventID**                 | Identyfikator zdarzenia                  
+**Level**                   | Poziom zdarzenia (Error, Warning)        
+**Message**                 | Treść zdarzenia                          
+**FaultingApplicationName** | Nazwa modułu powodującego błąd (jeśli dostępne) 
+
+(3) Zapisze raport do pliku CSV o zadanej ścieżce
+(4) Wypisze na ekranie liczbę zdarzeń pogrupowanych według źródła zdarzenia (SourceName) 
+(5) oraz ilość zdarzeń dla każdego poziomu (Error, Warning)
+
+Zadanie 3.
+Napisz funkcję PowerShell o nazwie Find-ProcessByName, która przyjmuje jako parametr nazwę procesu (lub wzorzec nazwy) i wykonuje następujące czynności:
+(1) Wyszukuje wszystkie uruchomione procesy, których nazwa pasuje do podanego wzorca.
+(2) Dla każdego znalezionego procesu wyświetla jego nazwę, identyfikator procesu (PID) oraz ilość pamięci RAM (w MB), którą proces aktualnie zużywa.
+(3) Na końcu funkcja powinna wyświetlić podsumowanie zawierające łączną liczbę znalezionych procesów oraz łączne i średnie zużycie pamięci RAM przez te procesy.  
+Przykłady użycia funkcji powinny obejmować wyszukiwanie procesów takich jak "chrome" lub "powershell".
