@@ -1,4 +1,4 @@
-# .\zadanie1.ps1 -sourceDir <path_to_directory> -destinationDirTXT <path_to_directory> -destinationDirLOG <path_to_directory>
+# .\zadanie1.ps1 -sourceDir <path> -destinationDirTXT <path> -destinationDirLOG <path>
 
 # Getting parameters
 param(

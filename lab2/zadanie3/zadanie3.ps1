@@ -1,4 +1,4 @@
-# .\zadanie3.ps1 -TestDir "C:\Test"
+# .\zadanie3.ps1 -TestDir <path>
 
 param(
     [Parameter(Mandatory=$true)]
