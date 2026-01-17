@@ -1,0 +1,17 @@
+# --- System (macOS) ---
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# --- VS Code ---
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+
+# --- Confidential ---
+*.ps1xml
+secrets.*
+.env*
